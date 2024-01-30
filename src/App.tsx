@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import About from "./pages/About";
 import NotFoundPage from "./pages/NotFoundPage";
 import { Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/*" element={<NotFoundPage />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       <Footer />
