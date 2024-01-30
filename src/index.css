@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .btn {
+    @apply px-3 py-1 bg-color2 rounded-md hover:bg-color1 hover:text-color3 text-color3 duration-500;
+  }
+}
