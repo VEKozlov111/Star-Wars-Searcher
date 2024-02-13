@@ -11,3 +11,8 @@ export interface ICard {
   category: string;
   thumbnail: string;
 }
+
+export interface ISearchProps {
+  searchQuerry: string;
+  setSearchQuerry: React.Dispatch<React.SetStateAction<string>>;
+}
