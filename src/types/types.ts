@@ -5,14 +5,19 @@ export interface INavItemProps {
 
 export interface ICard {
   id: number;
-  title: string;
-  description: string;
-  brand: string;
-  category: string;
-  thumbnail: string;
+  name: string;
+  height: string;
+  mass: string;
 }
 
 export interface ISearchProps {
   searchQuerry: string;
   setSearchQuerry: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export interface IFetchData {
+  count: number;
+  next: number;
+  previous: number;
+  results: ICard[];
 }
