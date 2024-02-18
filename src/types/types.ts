@@ -14,3 +14,10 @@ export interface ISearchProps {
   searchQuerry: string;
   setSearchQuerry: React.Dispatch<React.SetStateAction<string>>;
 }
+
+export interface IFetchData {
+  count: number;
+  next: number;
+  previous: number;
+  results: ICard[];
+}
