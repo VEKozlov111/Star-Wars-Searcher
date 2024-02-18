@@ -5,11 +5,9 @@ export interface INavItemProps {
 
 export interface ICard {
   id: number;
-  title: string;
-  description: string;
-  brand: string;
-  category: string;
-  thumbnail: string;
+  name: string;
+  height: string;
+  mass: string;
 }
 
 export interface ISearchProps {

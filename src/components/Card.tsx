@@ -8,12 +8,10 @@ interface ICardProps {
 function Card({ card }: ICardProps) {
   return (
     <div className="max-w-xs border rounded border-color3 p-4 hover:scale-110 duration-500 cursor-pointer">
-      <img src={card.thumbnail} className="rounded" alt="" />
       <ul>
-        <li className="text-color3">- Title: {card.title}</li>
-        <li className="text-color3">- Description: {card.description}</li>
-        <li className="text-color3">- Brand: {card.brand}</li>
-        <li className="text-color3">- Category: {card.category}</li>
+        <li className="text-color3">- Title: {card.name}</li>
+        <li className="text-color3">- mass: {card.mass}</li>
+        <li className="text-color3">- height: {card.height}</li>
       </ul>
     </div>
   );
