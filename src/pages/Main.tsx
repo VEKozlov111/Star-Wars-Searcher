@@ -91,7 +91,7 @@ function Main() {
 
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col m-h-full">
       <Search setQuerry={setQuerry} />
       {cardErr && (
         <h2 className="text-color1 text-2xl text-center mt-9">{cardErr}</h2>
@@ -100,15 +100,15 @@ function Main() {
         <h2 className="text-color3 text-2xl text-center mt-9">Loading....</h2>
       ) :
         data.length > 0 && !(cardErr || searchErr || cardNextErr || cardPreviousErr) ? (
-          <div>
+          <div className="flex flex-col justify-between gap-[1.5vw]" >
             <div className="flex  gap-[1.5vw] pt-2 flex-wrap justify-center">
               {data.map((card) => (
                 <Card card={card} key={card.id} />
               ))}
             </div>
-            <div className="flex gap-[1.5vw] justify-center pt-2">
+            <div className="flex gap-[1.5vw] justify-center pt-4">
               <button onClick={switchPreviousPage} className="btn">Previos page</button>
-              <p>Найдено героев: {count}</p>
+              <p>Heroes found: {count}</p>
               <p>Page № {pageNumber}</p>
               <button onClick={switchNextPage} className="btn">Next page</button>
             </div>
